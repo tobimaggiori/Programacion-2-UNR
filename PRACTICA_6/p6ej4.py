@@ -45,3 +45,4 @@ def test_mayoresDeCinco():
     assert mayoresDeCinco("Sol Luna Luz LCC") == 0
     assert mayoresDeCinco("") == 0
 # Editado desde GitHub
+# Editado desde Code

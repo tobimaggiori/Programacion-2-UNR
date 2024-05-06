@@ -9,3 +9,10 @@ def primer_letra(string):
                 rta = rta + string[i+1]
     return rta
 
+def test_primer_letra():
+    assert primer_letra("Tobias Maggiori") == "TM"
+
+# prueba
+def test():
+    hola = 1
+

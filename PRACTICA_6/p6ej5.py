@@ -1,4 +1,8 @@
-def primer_letra(string):
+def primer_letra(string, rta=""):
+    """
+    primer_letra : String String -> String
+
+    """
     if string == "":
         return ""
     else:
@@ -10,9 +14,6 @@ def primer_letra(string):
     return rta
 
 def test_primer_letra():
-    assert primer_letra("Tobias Maggiori") == "TM"
-
-# prueba
-def test():
-    hola = 1
-
+    assert primer_letra("Alegebra y Geometria Analitica") == "AyGA"
+    assert primer_letra("Universal Serial Bus") == "USB"
+    assert primer_letra("Analisis Matematico") == "AM"

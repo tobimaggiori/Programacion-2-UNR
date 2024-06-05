@@ -28,4 +28,36 @@ def imprimeValoresTuplaRec(tupla):
 # valores no se pueden modificar una vez creada y tienen un tamaño fijo.
 
 # ¿PARA QUE SIRVEN LAS TUPLAS?
+# Supongamos que necesitamos almacenar la informacion: nombre, apellido, celular 
+# de cierto conjunto de personas.
+# Seria conveniente utilizar tuplas de la forma: (nombre, apellido, celular)
+# Pues si usamos listas le podriamos insertar datos, modificando la estructura
+# queremos que tenga cada persona.
+# Pero las listas van a formar parte de la solucion, pues no sabemos de antemano
+# cuantas personas tiene el conjunto, por ello necesitamos una lista para guardar
+# la informacion de las personas.
+# Por lo tanto, vamos a tener una lista de tuplas, de la forma:
+# [(nombre1, apellido1, celular1), (nombre2, apellido2, celular2), ...]
+
+# Lo que necesitamos, ante todo, es una funcion que dada una lista de personas
+# permita agregar una nueva persona.
+# Hay varias formas de hacer esto, por ejemplo:
+def agregarPersona(listaDePersonas):
+    nombre = input('Nombre: ')
+    apellido = input('Apellido: ')
+    celular = input('Celular: ')
+    listaDePersonas += [(nombre, apellido, celular)]
+
+# Supongamos que nuestro conjunto de personas es un conjunto de alumnos.
+# Generemos una funcion que tome una lista de alumnos y nos genere una
+# salida amigable por pantalla:
+def muestraListaAlumnos(listaDeAlumnos):
+    for (nombre,apellido,celular) in listaDeAlumnos:
+        print("El alumno", nombre, apellido, "tiene el celular:", celular)
+
+# Conclusiones: las tuplas son mas rapidas que las listas en operaciones de acceso. (por su inmutabilidad)
+# ademas por esta misma razon, ocupan menos memoria.
+# Las tuplas se usan generalmente para representar conjuntos de elementos heterogeneos y para datos
+# que no deben cambiar a lo largo de la ejecucion del programa.
+
 

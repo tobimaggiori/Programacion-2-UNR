@@ -11,3 +11,5 @@ def crear_carta(valor, palo):
     
     # Retorna la carta como una tupla
     return (valor, palo)
+
+    # probando si esto se sube a git
